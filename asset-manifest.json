@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.08ebe555.css",
+    "main.js": "/static/js/main.8ae14bb8.js",
+    "static/media/mesh3.png": "/static/media/mesh3.fa259d0994381d3028ac.png",
+    "static/media/mesh.png": "/static/media/mesh.64f082ea5e6271e8d601.png",
+    "static/media/blog-vectors.png": "/static/media/blog-vectors.3e5ce8d60efae521ec95.png",
+    "static/media/bg.png": "/static/media/bg.38795c7ddb2bd11a5f55.png",
+    "static/media/default-thumbnail.png": "/static/media/default-thumbnail.9478b6d34901e4ab5618.png",
+    "static/media/certifications.png": "/static/media/certifications.109fbf98071f2bb5372d.png",
+    "static/media/coding-tech-stack.png": "/static/media/coding-tech-stack.3e904de0391a8a9fba44.png",
+    "static/media/how-I-code.png": "/static/media/how-I-code.cf8bd1a08ff635c8001e.png",
+    "static/media/sass-compiler-settings.png": "/static/media/sass-compiler-settings.6b2d8753454505bf49bd.png",
+    "static/media/extension-search-live-sass.png": "/static/media/extension-search-live-sass.6d031ed8d555404727a3.png",
+    "static/media/what-is-sass.png": "/static/media/what-is-sass.e1066451d63ecaca1af3.png",
+    "static/media/extensions-tab.png": "/static/media/extensions-tab.03266ece9e13a024b912.png",
+    "static/media/extension-settings.png": "/static/media/extension-settings.7ff187dcaaf057c8039c.png",
+    "static/media/how-I-design.png": "/static/media/how-I-design.128d29b2bbd4866919d1.png",
+    "static/media/extension-live-sass.png": "/static/media/extension-live-sass.c6e4c46c25d422ffaf38.png",
+    "static/media/logo.png": "/static/media/logo.d1850f1d074f5fd2eec3.png",
+    "static/media/sass-new-file.png": "/static/media/sass-new-file.46ac920da87825d434ca.png",
+    "static/media/mobile_phone_3d.png": "/static/media/mobile_phone_3d.cc485fa69d533083d894.png",
+    "index.html": "/index.html",
+    "main.08ebe555.css.map": "/static/css/main.08ebe555.css.map",
+    "main.8ae14bb8.js.map": "/static/js/main.8ae14bb8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08ebe555.css",
+    "static/js/main.8ae14bb8.js"
+  ]
+}
