@@ -58,7 +58,7 @@ const BlogPost = () => {
         <div className="Blog">
             <Helmet>
                 <title> {data.title} - Taha's Blog </title>
-                <link rel="canonical" href={`%PUBLIC_URL%/blog/${blogId}`} />
+                <link rel="canonical" href={`https://tahaparacha.netlify.app/blog/${blogId}`} />
                 <meta name='description' content={data.body} />
                 <meta property="og:image" content={data.thumbnail} />
 

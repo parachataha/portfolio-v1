@@ -65,12 +65,10 @@ const Home = () => {
                     <AiOutlineDown className='center'></AiOutlineDown>
                 </div>
             </header>
-            <section id="blog">
-                <div className="center">
-                    <h2 className='reveal'>Check out my blog</h2>
-                    <p className="reveal about-text"> I've created a blog to <b>help others</b> learn how to code, design, problem solve and more! </p>
-                    <a href="/blog" className="button reveal">Learn Now</a>
-                </div>
+            <section id="about">
+                <h2 className='reveal center'>Check out my blog</h2>
+                <p className="reveal center about-text"> I've created a blog to <b>help others</b> learn how to code, design, problem solve and more! </p>
+                <a href="/blog" className="center button reveal">Learn Now</a>
             </section>
             <section id="about">
                 <ul className='languages reveal'>
@@ -124,7 +122,7 @@ const Home = () => {
                             <h3>Total Websites*</h3>
                         </div>
                         <div className="item clients">
-                            <div className="data">4+</div>
+                            <div className="data">5+</div>
                             <h3>Clients Served</h3>
                         </div>
                         <div className="item happy">

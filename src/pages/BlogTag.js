@@ -37,7 +37,7 @@ const BlogSearch = () => {
         <div className="Blog BlogSearch">
             <Helmet>
                 <title> Results for #{query} - Taha's Blog </title>
-                <link rel="canonical" href={`%PUBLIC_URL%/blog/search/${query}`} />
+                <link rel="canonical" href={`https://tahaparacha.netlify.app/blog/search/${query}`} />
                 <meta name='description' content={`${data.length} results for blogs tagged with #${query} on Taha's blog, all about code, design and problem solving`} />
 
                 {/* facebook ones */}

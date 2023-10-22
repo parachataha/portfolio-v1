@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 body {
-  background-color: rgb(0, 1, 12);
+  background-color: #0e0e0e;
   color: white;
   overflow-x: hidden;
 }
@@ -1000,8 +1000,7 @@ footer.BlogFooter .main .item ul li a:hover {
 }
 @media screen and (max-width: 950px) {
   section#about ul.languages.reveal, section#about ul.languages.reveal.active {
-    display: block;
-    text-align: center;
+    display: none;
   }
   section#about ul.languages.reveal li a, section#about ul.languages.reveal.active li a {
     margin: 10px 20px;
@@ -1040,23 +1039,29 @@ footer.BlogFooter .main .item ul li a:hover {
     display: block;
   }
   footer.BlogFooter .main .item {
+    text-align: center;
     margin: 10px 0;
   }
   .Blog article .top {
     padding: 130px 0px 70px;
   }
   .Blog article .top .content {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: 0px;
-    padding: 20px 0px;
+    padding: 20px 10px;
   }
   .Blog article .top .content .thumb-wrapper {
     margin: 0;
-    padding: 0;
+    padding: 10px;
+    border: none;
+    border-radius: 0px;
   }
   .Blog article .top .content .thumb-wrapper img.thumbnail {
     border: none;
-    border-radius: 0px;
+    border-radius: 0;
     margin: 0;
     padding: 0;
   }
@@ -1074,6 +1079,9 @@ footer.BlogFooter .main .item ul li a:hover {
   .Blog article .main .body img {
     margin: 10px;
     display: block;
+  }
+  .Blog article.blog-home section {
+    padding: 60px 10px;
   }
   .Blog > .wrapper > .wrapper {
     width: 80%;
@@ -1120,10 +1128,16 @@ footer.BlogFooter .main .item ul li a:hover {
     display: block;
     text-align: center;
   }
+  section {
+    padding: 10px 10px;
+  }
 }
 @media screen and (max-width: 620px) {
-  h1 {
-    font-size: 3em;
+  .Home header.header div.content h1 {
+    font-size: 2.7em;
+  }
+  .Home header.header div.content h3 {
+    font-size: 2em;
   }
   header.header nav ul li a {
     font-size: 1.7em;
@@ -1147,66 +1161,97 @@ footer.BlogFooter .main .item ul li a:hover {
     padding: 10px 15px;
     border: none;
   }
-  section#about .center.center-container.grid .card.reveal {
-    padding: 10px 10px 10px 10px;
+  section#about .center.center-container.grid div:nth-child(odd) {
     border: none;
   }
-  section#projects {
-    display: block;
-    padding: 50px 20px;
+  section#about .center.center-container.grid .card.reveal, section#about .center.center-container.grid .card.reveal.active {
+    border-right: none 0px rgba(170, 146, 146, 0);
+    padding: 10px 10px 10px 10px;
   }
-  section#projects .coding-projects .stats, section#projects .design-projects .stats {
+  .Home section#projects {
+    display: block;
+    padding: 50px 10px;
+    margin: 10px 0;
+  }
+  .Home section#projects .coding-projects, .Home section#projects .design-projects {
+    margin: 20px 0;
+  }
+  .Home section#projects .coding-projects .stats, .Home section#projects .design-projects .stats {
     display: block;
     text-align: center;
   }
-  section#projects .coding-projects .widget.project, section#projects .design-projects .widget.project {
+  .Home section#projects .coding-projects .widget.project, .Home section#projects .design-projects .widget.project {
     display: block;
   }
-  section#projects .coding-projects .widget.project div.grid, section#projects .design-projects .widget.project div.grid {
+  .Home section#projects .coding-projects .widget.project div.grid, .Home section#projects .design-projects .widget.project div.grid {
     display: block;
   }
-  section#projects .coding-projects .widget.project div.grid .main, section#projects .design-projects .widget.project div.grid .main {
+  .Home section#projects .coding-projects .widget.project div.grid .main, .Home section#projects .design-projects .widget.project div.grid .main {
     border: none;
     padding: 80px 5px 50px 5px;
     border: none;
   }
-  section#projects .coding-projects .widget.project div.grid .info, section#projects .design-projects .widget.project div.grid .info {
+  .Home section#projects .coding-projects .widget.project div.grid .info, .Home section#projects .design-projects .widget.project div.grid .info {
     display: none;
     padding: 60px 5px 60px 5px;
   }
-  section#contact {
-    padding: 20px 20px 20px 20px;
+  .Home section#contact {
+    padding: 50px 10px;
+    margin: 10px 0;
   }
-  section#contact .contact-discord {
+  .Home section#contact .contact-discord {
     text-align: center;
-    background-image: linear-gradient(rgba(190, 190, 190, 0.08), rgba(190, 190, 190, 0.08)), linear-gradient(45deg, rgba(221, 0, 255, 0) 5%, rgba(210, 46, 255, 0.2));
+    background-image: linear-gradient(rgba(190, 190, 190, 0.08), rgba(190, 190, 190, 0.08)), linear-gradient(45deg, rgba(221, 0, 255, 0.1) 5%, rgba(210, 46, 255, 0.2));
   }
-  section#contact .contact-linkedin {
+  .Home section#contact .contact-linkedin {
     text-align: center;
-    background-image: linear-gradient(rgba(190, 190, 190, 0.08), rgba(190, 190, 190, 0.08)), linear-gradient(45deg, rgba(221, 0, 255, 0) 15%, rgba(112, 46, 255, 0.2));
+    background-image: linear-gradient(rgba(190, 190, 190, 0.08), rgba(190, 190, 190, 0.08)), linear-gradient(45deg, rgba(221, 0, 255, 0.1) 15%, rgba(112, 46, 255, 0.2));
   }
-  footer.Footer {
+  .Home footer.Footer {
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 40px 20px 10px 20px;
+    padding: 40px 10px 10px 10px;
   }
-  footer.Footer .main.grid {
+  .Home footer.Footer .main.grid {
     display: block;
   }
-  footer.Footer .main.grid .item {
+  .Home footer.Footer .main.grid .item {
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  footer.Footer .main.grid .item p {
+  .Home footer.Footer .main.grid .item p {
     padding: 20px 10px;
   }
-  footer.Footer .main.grid .item a svg {
+  .Home footer.Footer .main.grid .item a svg {
     margin: 5px 10px;
     padding: 5px 5px 10px 5px;
   }
   .Blog article .main .side {
     display: block;
+  }
+  .Blog article .main .body {
+    display: block;
+  }
+  .Blog article .main .body table {
+    display: block;
+  }
+  .Blog article .main .body table th, .Blog article .main .body table td, .Blog article .main .body table tr {
+    display: block;
+  }
+  .Blog article.blog-home section .grid-25-25, .Blog article.blog-home section .blogs {
+    display: block;
+  }
+  a.blog-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media sceen and (max-width: 400px) {
+  .Home section#projects, .Home section#contact {
+    padding: 50px 10px;
   }
 }
 .reveal, .widget {

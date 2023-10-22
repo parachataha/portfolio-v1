@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
-    background-color: rgb(0, 1, 12);
+    background-color: #0e0e0e;
     color: white;
     overflow-x: hidden;
 }
@@ -1016,8 +1016,7 @@ footer.BlogFooter {
 
     section#about {
         ul.languages.reveal, ul.languages.reveal.active {
-            display: block;
-            text-align: center;
+            display: none;
             li {
                 a{
                     margin: 10px 20px;
@@ -1064,6 +1063,7 @@ footer.BlogFooter {
         .main {
             display: block;
             .item {
+                text-align: center;
                 margin: 10px 0;
             }
         }
@@ -1074,13 +1074,16 @@ footer.BlogFooter {
             .top{
                 padding: 130px 0px 70px;
                 .content {
-                    display: block;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center; align-items: center;
                     border-radius: 0px;
-                    padding: 20px 0px;
+                    padding: 20px 10px;
                     .thumb-wrapper {
-                        margin: 0;padding: 0;
+                        margin: 0;padding: 10px;
+                        border: none; border-radius: 0px;
                         img.thumbnail {
-                            border: none; border-radius: 0px;
+                            border: none; border-radius: 0;
                             margin: 0;padding: 0;
                         }
                     }
@@ -1100,6 +1103,11 @@ footer.BlogFooter {
                         display: block;
                     }
                 }
+            }
+        }
+        article.blog-home {
+            section{
+                padding: 60px 10px;
             }
         }
         >.wrapper {
@@ -1156,12 +1164,19 @@ footer.BlogFooter {
         text-align: center;
     }
 
+    section { 
+        padding: 10px 10px;
+    }
+
 }
 
 @media screen and (max-width: 620px) {
 
-    h1 {
-        font-size: 3em;
+    .Home header.header div.content h1 {
+        font-size: 2.7em;
+    }
+    .Home header.header div.content h3 {
+        font-size: 2em;
     }
 
     header.header {
@@ -1187,18 +1202,23 @@ footer.BlogFooter {
             display: block;
             padding: 10px 15px;
             border: none;
-            .card.reveal {
-                padding: 10px 10px 10px 10px;
+            div:nth-child(odd) {
                 border: none;
+            }
+            .card.reveal, .card.reveal.active {
+                border-right: none 0px rgba(170, 146, 146, 0); 
+                padding: 10px 10px 10px 10px;
             }
         }
     }
 
-    section#projects {
+    .Home section#projects {
         display: block;
-        padding: 50px 20px;
+        padding: 50px 10px;
+        margin: 10px 0;
 
         .coding-projects, .design-projects {
+            margin: 20px 0;
             .stats {
                 display: block;
                 text-align: center;
@@ -1221,26 +1241,27 @@ footer.BlogFooter {
         }
     }
 
-    section#contact {
-        padding: 20px 20px 20px 20px;
+    .Home section#contact {
+        padding: 50px 10px;
+        margin: 10px 0;
         .contact-discord {
             text-align: center;
             background-image: 
                 linear-gradient(rgba(190, 190, 190, 0.08), rgba(190, 190, 190, 0.08)), 
-                linear-gradient(45deg, rgba(221, 0, 255, 0) 5%, rgba(210, 46, 255, 0.2));
+                linear-gradient(45deg, rgba(221, 0, 255, 0.1) 5%, rgba(210, 46, 255, 0.2));
         }
         .contact-linkedin  {
             text-align: center;
             background-image: 
                 linear-gradient(rgba(190, 190, 190, 0.08), rgba(190, 190, 190, 0.08)), 
-                linear-gradient(45deg, rgba(221, 0, 255, 0) 15%, rgba(112, 46, 255, 0.2));
+                linear-gradient(45deg, rgba(221, 0, 255, 0.1) 15%, rgba(112, 46, 255, 0.2));
         }
     }
 
-    footer.Footer {
+    .Home footer.Footer {
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 40px 20px 10px 20px;
+        padding: 40px 10px 10px 10px;
         .main.grid {
             display: block;
             .item {
@@ -1265,8 +1286,35 @@ footer.BlogFooter {
                 .side{
                     display: block;
                 }
+                .body {
+                    display: block;
+                    table {
+                        display: block;
+                        th, td, tr{
+                            display: block;
+                        }
+                    }
+                }
             }
         }
+        article.blog-home{
+            section{
+                .grid-25-25, .blogs{
+                    display: block;
+                }
+            }
+        }
+    }
+    a.blog-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; align-items: center;
+    }
+}
+
+@media sceen and (max-width: 400px){
+    .Home section#projects, .Home section#contact {
+        padding: 50px 10px;
     }
 }
 
