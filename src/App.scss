@@ -7,7 +7,7 @@
 body {
     background-color: rgb(0, 1, 12);
     color: white;
-    // overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 // typography
@@ -977,6 +977,17 @@ footer.BlogFooter {
     }
 }
 
+.Error404 {
+    min-height: 100vh;
+    background-image: url('./images/mesh4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h1 {
+        font-size: 1.8em;
+    }
+}
+
 
 @media screen and (max-width: 1100px) {
 
@@ -1029,11 +1040,68 @@ footer.BlogFooter {
             }
         }
     }
+
+    .Blog {
+        article {
+            .top {
+                padding: 130px 5vw 70px;
+            }
+            .main {
+                padding: 50px 30px 50px;
+                gap: 0px;
+                .body {
+                    padding: 10px 20px 10px 0;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 850px) {
 
+    footer.BlogFooter {
+        padding: 30px 10px;
+        .main {
+            display: block;
+            .item {
+                margin: 10px 0;
+            }
+        }
+    }
+
     .Blog {
+        article {
+            .top{
+                padding: 130px 0px 70px;
+                .content {
+                    display: block;
+                    border-radius: 0px;
+                    padding: 20px 0px;
+                    .thumb-wrapper {
+                        margin: 0;padding: 0;
+                        img.thumbnail {
+                            border: none; border-radius: 0px;
+                            margin: 0;padding: 0;
+                        }
+                    }
+                }
+            }
+            .main{
+                display: flex;
+                flex-direction: column-reverse;
+                .side {
+                    display: flex;
+                    gap: 10px;
+                }
+                .body {
+                    width: 100%;
+                    img {
+                        margin: 10px;
+                        display: block;
+                    }
+                }
+            }
+        }
         >.wrapper {
             >.wrapper{
                 width: 80%;
@@ -1186,6 +1254,16 @@ footer.BlogFooter {
                         margin: 5px 10px;
                         padding: 5px 5px 10px 5px;
                     }
+                }
+            }
+        }
+    }
+
+    .Blog {
+        article{
+            .main{
+                .side{
+                    display: block;
                 }
             }
         }

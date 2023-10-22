@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import Nav from "../components/Nav";
 import { useState, useEffect } from "react";
 
@@ -21,6 +21,8 @@ const BlogPost = () => {
         tags: ['loading'],
     })
 
+    const navigate = useNavigate()
+
     const [sections, setSections] = useState([])
 
 
@@ -30,6 +32,8 @@ const BlogPost = () => {
 
         if (post[0]) {
             setData({...post[0]})
+        } else {
+            navigate('/not-found')
         }
         
         window.scrollTo(0, 0);

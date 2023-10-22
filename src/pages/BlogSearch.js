@@ -35,6 +35,21 @@ const BlogSearch = () => {
 
     return ( 
         <div className="Blog BlogSearch">
+            <Helmet>
+                <title> Results for {query} - Taha's Blog </title>
+                <link rel="canonical" href={`%PUBLIC_URL%/blog/search/${query}`} />
+                <meta name='description' content={`${data.length} results for ${query} on Taha's blog, all about code, design and problem solving`} />
+
+                {/* facebook ones */}
+                <meta property="og:type" content={'article'} />
+                <meta property="og:title" content={`Results for ${query} - Taha's Blog`} />
+                <meta property="og:description" content={`${data.length} results for ${query} on Taha's blog, all about code, design and problem solving`} />
+                
+                {/* twitter ones */}
+                <meta name="twitter:creator" content={"Taha Paracha's Blog"} />
+                <meta name="twitter:title" content={`Results for ${query} - Taha's Blog`} />
+                <meta name="twitter:description" content={`${data.length} results for ${query} on Taha's blog, all about code, design and problem solving`} />
+            </Helmet>
 
             <article className="blog-home blog-search">
                 <BlogNav/>
