@@ -8,6 +8,7 @@ import Error404 from './pages/Error404'
 import BlogPost from './pages/BlogPost';
 import BlogSearch from './pages/BlogSearch';
 import BlogTag from './pages/BlogTag';
+import AdminPost from './pages/AdminPost';
 
 function App() {
   return (
@@ -37,6 +38,8 @@ function App() {
           <Route path='/blog/search/:query' Component={BlogSearch}></Route>
           <Route path='/blog/tag/:query' Component={BlogTag}></Route>
           <Route path='/blog/post/:blogId' Component={BlogPost}></Route>
+
+          <Route path='/admin/post' Component={AdminPost}></Route>
           <Route path='*' Component={Error404}></Route>
         </Routes>
       </Router>

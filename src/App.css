@@ -129,6 +129,15 @@ input::placeholder, input[placeholder] {
   color: rgba(255, 255, 255, 0.5);
 }
 
+form.form-default textarea, form.form-default input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
+  margin: 6px;
+  border: none;
+  padding: 4px 6px;
+  color: white;
+}
+
 .button {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 5px 8px;
