@@ -67,7 +67,7 @@ const Home = () => {
             </header>
             <section id="about">
                 <h2 className='reveal center'>Check out my blog</h2>
-                <p className="reveal center about-text"> I've created a blog to <b>help others</b> learn how to code, design and problem solve. Each blog post is beginner friendly and advanced! As a <b>self-taught</b> coder and designer, it was incredibly hard to keep swapping between methods and tutorials with different techniques, so I took the time to see <b>what made me struggle</b> and to create a blog that solves common <b>beginner and advanced</b> problems, making sure I explain each step of the way.</p>
+                <p className="reveal center about-text"> I've created a blog to <b>help others</b> learn how to code, design and problem solve. As a <b>self-taught</b> coder and designer, it was incredibly hard to keep swapping between methods and tutorials with different techniques, so I took the time to see <b>what made me struggle</b> and to create a blog that solves common <b>beginner and advanced</b> problems, making sure I explain each step of the way.</p>
                 <a href="/blog" className="center button reveal">Learn Now</a>
             </section>
             <section id="about">
