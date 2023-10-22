@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Taha Paracha Portfolio
+
+Hi, welcome to my portfolio Github. It's all open source so you can see how I coded my way into solving some coding problems. This project was made with ReactJS, SASS and HTML. You can learn more on my portfolio website
+
+[link](https://tahaparacha.netlify.app/)
+
+------------------------------------------
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
