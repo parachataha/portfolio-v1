@@ -356,7 +356,7 @@ nav ul li a:hover {
   background-color: rgb(0, 1, 12);
 }
 .Home header.header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 1, 12)), url("./images/bg.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 1, 12)), url("./images/bg-min.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 20px;
@@ -397,7 +397,7 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgb(0, 1, 12), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 1, 12)), url("./images/mesh.png");
+  background-image: linear-gradient(rgb(0, 1, 12), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 1, 12)), url("./images/mesh-min.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
   background-position-x: 50%;
@@ -443,7 +443,7 @@ nav ul li a:hover {
   border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 .Home section#projects {
-  background-image: linear-gradient(rgb(0, 1, 12), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgb(0, 1, 12)), url("./images/mesh3.png");
+  background-image: linear-gradient(rgb(0, 1, 12), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgb(0, 1, 12)), url("./images/mesh3-min.png");
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
 }
