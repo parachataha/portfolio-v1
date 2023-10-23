@@ -259,7 +259,7 @@ const blogData = [
     },
     { id: "how-to-create-a-sitemap",
     title: "Full tutorial: How to create a sitemap",
-    tags: ["coding", "configurations", "sitemaps", "websites", "search"],
+    tags: ["coding", "sitemaps", "websites", "search"],
     keywords: "",
     body: `<section id='what_are_sitemaps'>
     <h3>What on earth is a sitemap?</h3>
