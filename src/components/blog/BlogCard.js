@@ -12,7 +12,6 @@ const BlogCard = (props) => {
             <div className="tags flex">
                 {data.tags[0] && <Link className="button" to={`/blog/tag/${data.tags[0]}`}>#{data.tags[0].toLowerCase()}</Link>}
                 {data.tags[1] && <Link className="button" to={`/blog/tag/${data.tags[1]}`}>#{data.tags[1].toLowerCase()}</Link>}
-                {data.tags[2] && <Link className="button" to={`/blog/tag/${data.tags[2]}`}>#{data.tags[2].toLowerCase()}</Link>}
             </div>
 
             <h3>{data.title}</h3>

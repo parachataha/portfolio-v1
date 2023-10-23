@@ -4,7 +4,6 @@
 body {
   background-color: #0e0e0e;
   color: white;
-  overflow-x: hidden;
 }
 
 h1 {
@@ -771,7 +770,7 @@ nav ul li a:hover {
 }
 .Blog article .main .body span {
   text-align: left;
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 210%;
   font-family: sans-serif;
   font-family: "Open Sans", sans-serif;
@@ -814,6 +813,12 @@ nav ul li a:hover {
   font-size: 1.6em;
   font-weight: 800;
 }
+.Blog article .main .body span h4 {
+  font-size: 1.2em;
+  margin: 13px 0px 3px;
+  padding: 0;
+  color: rgb(184, 184, 184);
+}
 .Blog article .main .body span a {
   text-decoration: underline rgb(255, 93, 193);
 }
@@ -843,13 +848,12 @@ nav ul li a:hover {
   margin: 5px 0;
   padding-left: 20px;
 }
-.Blog article .main .body span code {
-  background-color: rgba(245, 245, 245, 0.1);
-  border-radius: 3px;
-  font-family: monospace;
-  padding: 2px 7px 2px 5px;
-}
 .Blog article .main .body span .terminal, .Blog article .main .body span .code-block, .Blog article .main .body span pre {
+  overflow-y: hidden;
+}
+.Blog article .main .body span .terminal, .Blog article .main .body span .code-block, .Blog article .main .body span pre, .Blog article .main .body span code {
+  word-break: break-all;
+  word-wrap: break-word;
   padding: 0;
   margin: 0;
   background-color: rgba(255, 255, 255, 0.05);
@@ -861,11 +865,18 @@ nav ul li a:hover {
   font-family: monospace;
   font-size: 0.8em;
   line-height: 120%;
+  width: 100%;
 }
-.Blog article .main .body span .terminal span, .Blog article .main .body span .code-block span, .Blog article .main .body span pre span {
+.Blog article .main .body span .terminal span, .Blog article .main .body span .code-block span, .Blog article .main .body span pre span, .Blog article .main .body span code span {
   line-height: 120%;
   font-family: monospace;
   font-size: 1.2em;
+}
+.Blog article .main .body span code {
+  background-color: rgba(245, 245, 245, 0.1);
+  border-radius: 3px;
+  font-family: monospace;
+  padding: 2px 7px 2px 5px;
 }
 .Blog article .main .body span .terminal::before {
   content: " > ";
@@ -1009,6 +1020,23 @@ footer.BlogFooter .main .item ul li a:hover {
     display: grid;
     grid-template-columns: 50% 50%;
   }
+  .Blog article .main {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0px;
+  }
+  .Blog article .main .side {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: flex;
+    gap: 10px;
+  }
+  .Blog article .main .side .contents.card {
+    padding-right: 20px;
+  }
+  .Blog article .main .body section:nth-child(1) {
+    padding-top: 10px;
+  }
 }
 @media screen and (max-width: 950px) {
   section#about ul.languages.reveal, section#about ul.languages.reveal.active {
@@ -1036,6 +1064,8 @@ footer.BlogFooter .main .item ul li a:hover {
     padding: 130px 5vw 70px;
   }
   .Blog article .main {
+    display: flex;
+    flex-direction: column-reverse;
     padding: 50px 30px 50px;
     gap: 0px;
   }
@@ -1239,6 +1269,9 @@ footer.BlogFooter .main .item ul li a:hover {
     margin: 5px 10px;
     padding: 5px 5px 10px 5px;
   }
+  .Blog article .top .content p.tags a {
+    display: block;
+  }
   .Blog article .main .side {
     display: block;
   }
@@ -1261,9 +1294,12 @@ footer.BlogFooter .main .item ul li a:hover {
     align-items: center;
   }
 }
-@media sceen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .Home section#projects, .Home section#contact {
     padding: 50px 10px;
+  }
+  .Blog article .main .body span img {
+    width: 100%;
   }
 }
 .reveal, .widget {

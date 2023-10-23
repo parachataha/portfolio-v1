@@ -11,37 +11,69 @@
   <loc>https://tahaparacha.netlify.app/</loc>
   <lastmod>2023-10-23T09:14:10+00:00</lastmod>
   <changefreq>monthly</changefreq>
-  <proirity>0.9</proirity>
+  <proirity>1</proirity>
 </url>
 <url>
   <loc>https://tahaparacha.netlify.app/blog/</loc>
   <lastmod>2023-10-23T09:14:10+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-   <proirity>0.8</proirity>
+  <changefreq>daily</changefreq>
+   <proirity>0.9</proirity>
 </url>
 <url>
   <loc>https://tahaparacha.netlify.app/blog/search/</loc>
   <lastmod>2023-10-23T09:14:10+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-   <proirity>0.6</proirity>
+  <changefreq>daily</changefreq>
+   <proirity>0.7</proirity>
 </url>
 <url>
   <loc>https://tahaparacha.netlify.app/blog/tag/about%20me/</loc>
   <lastmod>2023-10-23T09:14:10+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-   <proirity>0.7</proirity>
+  <changefreq>daily</changefreq>
+   <proirity>0.8</proirity>
 </url>
 <url>
   <loc>https://tahaparacha.netlify.app/blog/tag/coding/</loc>
   <lastmod>2023-10-23T09:14:10+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-   <proirity>0.7</proirity>
+  <changefreq>daily</changefreq>
+   <proirity>0.8</proirity>
 </url>
+
 <url>
   <loc>https://tahaparacha.netlify.app/blog/tag/design/</loc>
   <lastmod>2023-10-23T09:14:10+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-   <proirity>0.7</proirity>
+  <changefreq>daily</changefreq>
+   <proirity>0.8</proirity>
+</url>
+
+<url>
+  <loc>https://tahaparacha.netlify.app/blog/post/what-is-sass</loc>
+  <lastmod>2023-10-23T09:14:10+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+   <proirity>0.5</proirity>
+</url>
+<url>
+  <loc>https://tahaparacha.netlify.app/blog/post/how-i-code</loc>
+  <lastmod>2023-10-23T09:14:10+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+   <proirity>0.5</proirity>
+</url>
+<url>
+  <loc>https://tahaparacha.netlify.app/blog/post/how-i-design</loc>
+  <lastmod>2023-10-23T09:14:10+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+   <proirity>0.5</proirity>
+</url>
+<url>
+  <loc>https://tahaparacha.netlify.app/blog/post/tech-stacks</loc>
+  <lastmod>2023-10-23T09:14:10+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+   <proirity>0.5</proirity>
+</url>
+<url>
+  <loc>https://tahaparacha.netlify.app/blog/post/how-to-create-a-sitemap</loc>
+  <lastmod>2023-10-23T09:14:10+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+   <proirity>0.5</proirity>
 </url>
 
 </urlset>

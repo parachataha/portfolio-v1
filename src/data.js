@@ -11,6 +11,12 @@ import extensionSettings from './images/blog-images/assets/extension-settings.pn
 import sassNewFile from './images/blog-images/assets/sass-new-file.png'
 import sassCompilerSettings from './images/blog-images/assets/sass-compiler-settings.png'
 
+// create sitemap
+import createSitemapEnterUrl from './images/blog-images/assets/create-sitemap/enter-url.png'
+import createSitemapClickViewDetails from './images/blog-images/assets/create-sitemap/view-details.png'
+import createSitemapDownloadFile from './images/blog-images/assets/create-sitemap/downloadFile.png'
+
+
 const blogData = [
     { id: 'how-i-code',
         title: 'The Basics on How I Code',
@@ -251,6 +257,170 @@ const blogData = [
         
 
     },
+    { id: "how-to-create-a-sitemap",
+    title: "Full tutorial: How to create a sitemap",
+    tags: ["coding", "configurations", "sitemaps", "websites", "search"],
+    keywords: "",
+    body: `<section id='what_are_sitemaps'>
+    <h3>What on earth is a sitemap?</h3>
+    Sitemaps is a simple file added to your public folder that allows search engines to easily and efficiently crawl your site. This allows your website to be added to search engines and therefore search results. Thus making your site more reachable.
+    +
+    <h4>What does "Crawling" mean?</h4>
+    If you are not familiar with the term "crawling", here is a brief summary. Crawling is the process of search engines going through your website and finding all the pages. This is done by following links on your website. However, if you have a lot of pages, it can be hard for them to "crawl" to all the different pages. This is where sitemaps come in. Sitemaps are a simple file that contains all the links to your website. This allows search engines to easily find all the pages on your website and therefore add them to their search results.
+    </section>
+    <section id='should_i_have_a_sitemap'>
+    <h3>Should I have a sitemap?</h3>
+    The quick answer is <b>absolutely yes!</b></yes> +
+    There are no disadvantages to a sitemap, and it will help you reach more users.+
+    Sitemaps are simple to create and can be easily connected to search engine consoles. 
+    </section>
+    <section id='creating_a_simple_sitemap'>
+    <h3>Creating a Sitemap</h3>
+    To get started, simply go to <a href='https://www.xml-sitemaps.com/' target='_blank'>XML-Sitemap's website</a> and enter your website's URL. +
+    If you have not yet deployed your site yet, simply upload it to a host, free or paid, and then visit the site.+
+    In this example I will use <code>https://tahaparacha.netlify.app/</code/>. Make sure to use the full link, including <code>https://</code>.+
+    Then, simply click "start". +
+    <img src="${createSitemapEnterUrl}" alt='enter url and click "start"'>+
+    Then, once its completed, click <code>view sitemap details</code>+
+    <img src="${createSitemapClickViewDetails}" alt='click "view sitemap details"'>+
+    Then, simply click <code>download your XML sitemap file</code> and place it in your public folder. +
+    <img src="${createSitemapDownloadFile}" alt='download your file'> +
+    And thats it! You now have a sitemap in your website. Simply deploy your new sitemap onto your host and then link your sitemap onto your search console.+
+    </section>
+    <section id='editing_your_sitemap'>
+    <h3>Editing Your Sitemap</h3>
+    Sometimes you may need to update your sitemap. (missing data, new pages)
+    In order to fix this, open up your <code>sitemap.xml</code>: +
+    <pre>
+&lt;?<r>xml</r> <y>version</y>=<g>"1.0"</g> <y>encoding</y>=<g>"UTF-8"</g>?&gt;
+&lt;<r>urlset</r>
+    <y>xmlns</y>=<g>"http://www.sitemaps.org/schemas/sitemap/0.9"</g>
+    <y>xmlns:xsi</y>=<g>"http://www.w3.org/2001/XMLSchema-instance"<g/>
+    <y>xsi:schemaLocation</y>=<g>"http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"</g> &gt;
+
+    &lt;<r>url</r>&gt;
+        &lt;<r>loc</r>&gt;https://website.com/ &lt;/<r>loc</r>&gt;
+        &lt;<r>lastmod</r>&gt;2023-10-23T09:14:10 00:00&lt;/<r>lastmod</r>&gt;
+    &lt;/<r>url></r>&gt; 
+
+&lt;/<r>urlset</r>&gt; </pre>
+    +
+    Now, time to create a new page on our sitemap.+
+    Simply use the code below and paste it below the last <code>&lt;<r>url</r>&gt;</code> tag.+
+    <pre>
+&lt;<r>url</r>&gt;
+    &lt;<r>loc</r>&gt;https://website.com/path_name &lt;/<r>loc</r>&gt;
+    &lt;<r>lastmod</r>&gt;2023-10-23T09:14:10 00:00&lt;/<r>lastmod</r>&gt;
+&lt;/<r>url></r>&gt; </pre>
+    <section id='change_frequencies'>
+    <h3>Change Frequencies</h3>
+    + And, if you would like to specify how often the pathname gets updated, you can add the <code>&lt;<r>changefreq<r/>&gt;</code> tag.+
+    <pre>
+&lt;<r>url</r>&gt; 
+    &lt;<r>loc</r>&gt;https://website.com/path_name &lt;/<r>loc</r>&gt;
+    &lt;<r>lastmod</r>&gt;2023-10-23T09:14:10 00:00&lt;/<r>lastmod</r>&gt;
+    &lt;<r>changefreq</r>&gt; weekly &lt;/<r>changefreq</r>&gt; 
+&lt;/<r>url</r>&gt; </pre>
+    + With this syntax, you can use either <code>never</code>, <code>yearly</code>, <code>monthly</code>, <code>weekly</code>, <code>daily</code>, <code>hourly</code> or <code>always</code>.+
+    Please also take into consideration that this is just a suggestion to the search engine. It does not guarantee that the search engine will update the page at the specified time.
+    </section>
+    
+    <h4>Usages of Change Frequencies</h4>
+    <ul>
+    <li> Never: Old news, books, outdated information  </li>
+    <li> Yearly: Contact pages, about pages, login forms </li>
+    <li> Monthly: Infrequently updated article pages, FAQs* </li>
+    <li> Weekly: Product pages, Infrequently updated article pages </li>
+    <li> Daily: Blog home pages, alert systems </li>
+    <li> Hourly: News sites covering new stories, Weather information </li>
+    <li> Always: Stock Market Data, Messaging apps* </li>
+    </ul>
+    <i>You can choose whichever suits your pages, after all, each site is different.</i>
+    </section> 
+    <section id='page_priorities'>
+    <h3>Page Priorities</h3>
+    You can also add a priority to your pages. This is a number from 0.0 to 1.0.+ 
+    Page priorities aren't as important as change frequencies, but theres still no disadvantage to using them.
+    You can simply add the <code>&lt;<r>priority</r>&gt;</code> tag to your <code>&lt;<r>url</r>&gt;</code> tag.+
+    <pre>
+&lt;<r>url</r>&gt; 
+    &lt;<r>loc</r>&gt;https://website.com/path_name &lt;/<r>loc</r>&gt;
+    &lt;<r>lastmod</r>&gt;2023-10-23T09:14:10 00:00&lt;/<r>lastmod</r>&gt;
+    &lt;<r>priority</r>&gt; 0.8 &lt;/<r>priority</r>&gt;
+&lt;/<r>url</r>&gt; </pre>
+    <h4>Usages of Page Priorities</h4>
+    <ul>
+    <li> 0.8 to 1: Home pages, all blog lists, all product list </li>
+    <li> 0.4 to 0.8: Articles, blog posts </li>
+    <li> 0.0 to 0.4: Outdated information*, irrelevant information </li>
+    </ul>
+    <i>You can choose whichever suits your pages, after all, each site is different.</i>
+    </section>
+    <section id='example_of_sitemap'>
+    <h3>Our final Example of a Sitemap</h3>
+    So, now you know the components of a sitemap, here is our fully finished sitemap.
+    <pre>
+&lt;?<r>xml</r> <y>version</y>=<g>"1.0"</g> <y>encoding</y>=<g>"UTF-8"</g>?&gt;
+&lt;<r>urlset</r>
+    <y>xmlns</y>=<g>"http://www.sitemaps.org/schemas/sitemap/0.9"</g>
+    <y>xmlns:xsi</y>=<g>"http://www.w3.org/2001/XMLSchema-instance"<g/>
+    <y>xsi:schemaLocation</y>=<g>"http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"</g> &gt;
+
+&lt;<r>url</r>&gt;
+    &lt;<r>loc</r>&gt;https://website.com/ &lt;/<r>loc</r>&gt;
+    &lt;<r>lastmod</r>&gt;2023-10-23T09:14:10 00:00&lt;/<r>lastmod</r>&gt;
+    &lt;<r>priority</r>&gt; 1 &lt;/<r>priority</r>&gt;
+&lt;/<r>url></r>&gt; 
+
+&lt;<r>url</r>&gt;
+    &lt;<r>loc</r>&gt;https://website.com/about &lt;/<r>loc</r>&gt;
+    &lt;<r>lastmod</r>&gt;2023-10-23T09:14:10 00:00&lt;/<r>lastmod</r>&gt;
+    &lt;<r>changefreq</r>&gt; yearly &lt;/<r>changefreq</r>&gt; 
+    &lt;<r>priority</r>&gt; 0.8 &lt;/<r>priority</r>&gt;
+&lt;/<r>url></r>&gt; 
+
+&lt;<r>url</r>&gt;
+    &lt;<r>loc</r>&gt;https://website.com/contact &lt;/<r>loc</r>&gt;
+    &lt;<r>lastmod</r>&gt;2023-10-23T09:14:10 00:00&lt;/<r>lastmod</r>&gt;
+    &lt;<r>changefreq</r>&gt; monthly &lt;/<r>changefreq</r>&gt; 
+    &lt;<r>priority</r>&gt; 0.8 &lt;/<r>priority</r>&gt;
+&lt;/<r>url></r>&gt; 
+
+&lt;<r>url</r>&gt;
+    &lt;<r>loc</r>&gt;https://website.com/products &lt;/<r>loc</r>&gt;
+    &lt;<r>lastmod</r>&gt;2023-10-23T09:14:10 00:00&lt;/<r>lastmod</r>&gt;
+    &lt;<r>changefreq</r>&gt; daily &lt;/<r>changefreq</r>&gt; 
+    &lt;<r>priority</r>&gt; 0.8 &lt;/<r>priority</r>&gt;
+&lt;/<r>url></r>&gt; 
+
+&lt;<r>url</r>&gt;
+    &lt;<r>loc</r>&gt;https://website.com/product/1 &lt;/<r>loc</r>&gt;
+    &lt;<r>lastmod</r>&gt;2023-10-23T09:14:10 00:00&lt;/<r>lastmod</r>&gt;
+    &lt;<r>changefreq</r>&gt; hourly &lt;/<r>changefreq</r>&gt; 
+    &lt;<r>priority</r>&gt; 0.5 &lt;/<r>priority</r>&gt;
+&lt;/<r>url></r>&gt; 
+
+&lt;<r>url</r>&gt;
+    &lt;<r>loc</r>&gt;https://website.com/blog/ &lt;/<r>loc</r>&gt;
+    &lt;<r>lastmod</r>&gt;2023-10-23T09:14:10 00:00&lt;/<r>lastmod</r>&gt;
+    &lt;<r>changefreq</r>&gt; daily &lt;/<r>changefreq</r>&gt; 
+    &lt;<r>priority</r>&gt; 0.8 &lt;/<r>priority</r>&gt;
+&lt;/<r>url></r>&gt; 
+
+&lt;<r>url</r>&gt;
+    &lt;<r>loc</r>&gt;https://website.com/blog/post/1 &lt;/<r>loc</r>&gt;
+    &lt;<r>lastmod</r>&gt;2023-10-23T09:14:10 00:00&lt;/<r>lastmod</r>&gt;
+    &lt;<r>changefreq</r>&gt; daily &lt;/<r>changefreq</r>&gt; 
+    &lt;<r>priority</r>&gt; 0.5 &lt;/<r>priority</r>&gt;
+&lt;/<r>url></r>&gt; 
+
+&lt;/<r>urlset</r>&gt; </pre>
+    And for more examples, most websites have their sitemaps at <code>www.website.com/sitemap.xml</code>. You can view them by simply adding <code>/sitemap.xml</code> to the end of the URL. 
+    </section>
+    `
+    }
 ]
 
 export default blogData

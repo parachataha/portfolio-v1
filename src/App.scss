@@ -7,7 +7,6 @@
 body {
     background-color: #0e0e0e;
     color: white;
-    overflow-x: hidden;
 }
 
 // typography
@@ -782,7 +781,7 @@ nav {
                         color: white;
                     }
                     text-align: left;
-                    font-size: 1.2em;
+                    font-size: 1.1em;
                     line-height: 210%;
                     font-family: sans-serif;
                     font-family: 'Open Sans', sans-serif;
@@ -803,6 +802,11 @@ nav {
                         margin: 20px 4px 10px 0;
                         font-size: 1.6em;
                         font-weight: 800;
+                    }
+                    h4{
+                        font-size: 1.2em;
+                        margin: 13px 0px 3px; padding: 0;
+                        color: rgb(184, 184, 184);
                     }
                     a {
                         text-decoration: underline rgb(255, 93, 193);
@@ -833,13 +837,12 @@ nav {
                         margin: 5px 0;
                         padding-left: 20px;
                     }
-                    code {
-                        background-color: rgba(245, 245, 245, 0.1);
-                        border-radius: 3px;
-                        font-family: monospace;
-                        padding: 2px 7px 2px 5px;
-                    }
                     .terminal, .code-block, pre {
+                        overflow-y: hidden;
+                    }
+                    .terminal, .code-block, pre, code {
+                        word-break: break-all;
+                        word-wrap: break-word;
                         padding: 0; margin: 0;
                         background-color: rgba(255, 255, 255, 0.05);
                         border: 1px solid rgba(255, 255, 255, 0.1);
@@ -850,11 +853,18 @@ nav {
                         font-family: monospace;
                         font-size: .8em;
                         line-height: 120%;
+                        width: 100%;
                         span {
                             line-height: 120%;
                             font-family: monospace;
                             font-size: 1.2em;
                         }
+                    }
+                    code {
+                        background-color: rgba(245, 245, 245, 0.1);
+                        border-radius: 3px;
+                        font-family: monospace;
+                        padding: 2px 7px 2px 5px;
                     }
                     .terminal {
                         &::before {
@@ -1020,6 +1030,28 @@ footer.BlogFooter {
         display: grid;
         grid-template-columns: 50% 50%;
     }
+    .Blog{
+        article{
+            .main{
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 0px;
+                .side {
+                    margin-bottom: 0;padding-bottom: 0;
+                    display: flex;
+                    gap: 10px;
+                    .contents.card {
+                        padding-right: 20px;
+                    }
+                }
+                .body{
+                    section:nth-child(1){
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 950px) {
@@ -1056,6 +1088,8 @@ footer.BlogFooter {
                 padding: 130px 5vw 70px;
             }
             .main {
+                display: flex;
+                flex-direction: column-reverse;
                 padding: 50px 30px 50px;
                 gap: 0px;
                 .body {
@@ -1292,6 +1326,15 @@ footer.BlogFooter {
 
     .Blog {
         article{
+            .top{
+                .content{
+                    p.tags {
+                        a{
+                            display: block;
+                        }
+                    }
+                }
+            }
             .main{
                 .side{
                     display: block;
@@ -1322,9 +1365,22 @@ footer.BlogFooter {
     }
 }
 
-@media sceen and (max-width: 400px){
+@media screen and (max-width: 400px){
     .Home section#projects, .Home section#contact {
         padding: 50px 10px;
+    }
+    .Blog {
+        article{
+            .main{
+                .body{
+                    span {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

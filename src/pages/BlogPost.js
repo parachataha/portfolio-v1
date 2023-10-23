@@ -157,7 +157,7 @@ const BlogPost = () => {
                                 })}
                             </ol>
                         </div>
-                        <br />
+                        <br /> 
                         <div className="hire-me card card-yellow">
                             <h2>Looking for an inspiring website?</h2>
                             <p>Contact me today for a suitable price. Learn more now</p>

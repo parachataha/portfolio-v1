@@ -6,8 +6,8 @@ const BlogNav = () => {
             <ul>
                 <div>
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/blog">Blog</Link></li>
                     <li><a href="/#about">About</a></li>
+                    <li><Link to="/blog">Blog</Link></li>
                 </div>
                 <div className="right">
                     <li><a className="bg" href="">Hire Me</a></li>
