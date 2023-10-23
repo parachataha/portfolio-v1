@@ -3,6 +3,7 @@ import codingTechStackThumb from './images/blog-images/coding-tech-stack.png'
 import howICodeThumb from './images/blog-images/how-I-code.png'
 import whatIsThumb from './images/blog-images/what-is-sass.png'
 import howIDesignThumb from './images/blog-images/how-I-design.png'
+import howToCreateSitemap from './images/blog-images/how-to-create-a-sitemap.png'
 
 import extensionsTab from './images/blog-images/assets/extensions-tab.png'
 import extensionSearchSassCompiler from './images/blog-images/assets/extension-search-live-sass.png'
@@ -259,8 +260,9 @@ const blogData = [
     },
     { id: "how-to-create-a-sitemap",
     title: "Full tutorial: How to create a sitemap",
-    tags: ["coding", "sitemaps", "websites", "search"],
-    keywords: "",
+    tags: ["coding", "sitemaps", "xml", "search"],
+    thumbnail: howToCreateSitemap,
+    keywords: "coding sitemap xml google search console sitemaps how to create a sitemap crawling yahoo bing ask",
     body: `<section id='what_are_sitemaps'>
     <h3>What on earth is a sitemap?</h3>
     Sitemaps is a simple file added to your public folder that allows search engines to easily and efficiently crawl your site. This allows your website to be added to search engines and therefore search results. Thus making your site more reachable.
