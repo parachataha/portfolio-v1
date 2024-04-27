@@ -324,6 +324,28 @@ nav {
             }
         }
     }
+    div.socials {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        a {
+            color: rgba(255, 255, 255, 0.3);
+            transition: .5s;
+            svg {
+                font-size: 1.5em;
+                margin: 5px 15px 7.5px 0;
+            }
+            &:hover {
+                transform: scale(1.05);
+                transform: -webkit-scale(1.05);
+                transform: -moz-scale(1.05);
+                transform: -ms-scale(1.05);
+                color: white;
+                transition: .5s;
+            }
+        }
+    }
 }
 
 .Home {
@@ -1008,12 +1030,6 @@ footer.BlogFooter {
     }
 }
 
-
-@media screen and (max-width: 1100px) {
-
-
-}
-
 @media screen and (max-width: 1100px) {
     section#projects {
         .coding-projects, .design-projects {
@@ -1229,6 +1245,9 @@ footer.BlogFooter {
                 li{
                     a{ font-size: 1.7em; opacity: .5; text-align: left;}
                 }
+            }
+            div.socials {
+                display: none;
             }
         }
         .content {

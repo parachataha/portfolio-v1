@@ -1,6 +1,6 @@
 import logo from '../images/logo.png'
 
-import {BsLinkedin, BsDiscord} from 'react-icons/bs'
+import {BsLinkedin, BsDiscord, BsGithub} from 'react-icons/bs'
 
 const Footer = () => {
     return ( 
@@ -11,8 +11,9 @@ const Footer = () => {
                     <img className='logo' src={logo} alt="logo" />
                     <p>Connect with me via Discord or LinkedIn. My Discord handle is @tahabaha. However I only accept message requests. Not friend requests.</p>
                     <div className="flex socials">
-                        <a href="https://www.linkedin.com/in/tahaparacha/" target='_blank'> <BsLinkedin></BsLinkedin> </a>
-                        <a href="https://discord.gg/aYbBrAYQyN" target='_blank'> <BsDiscord></BsDiscord> </a>
+                        <a href="https://github.com/parachataha" target='_blank'> <BsGithub /> </a>
+                        <a href="https://www.linkedin.com/in/tahaparacha/" target='_blank'> <BsLinkedin /> </a>
+                        <a href="https://discord.gg/aYbBrAYQyN" target='_blank'> <BsDiscord /> </a>
                     </div>
                 </div>
                 

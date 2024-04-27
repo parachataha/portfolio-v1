@@ -350,6 +350,28 @@ nav ul li a:hover {
   transition: 0.3s;
   color: rgba(255, 255, 255, 0.9);
 }
+nav div.socials {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+nav div.socials a {
+  color: rgba(255, 255, 255, 0.3);
+  transition: 0.5s;
+}
+nav div.socials a svg {
+  font-size: 1.5em;
+  margin: 5px 15px 7.5px 0;
+}
+nav div.socials a:hover {
+  transform: scale(1.05);
+  transform: -webkit-scale(1.05);
+  transform: -moz-scale(1.05);
+  transform: -ms-scale(1.05);
+  color: white;
+  transition: 0.5s;
+}
 
 .Home {
   background-color: rgb(0, 1, 12);
@@ -1185,6 +1207,9 @@ footer.BlogFooter .main .item ul li a:hover {
     font-size: 1.7em;
     opacity: 0.5;
     text-align: left;
+  }
+  header.header nav div.socials {
+    display: none;
   }
   header.header .content {
     display: block;
