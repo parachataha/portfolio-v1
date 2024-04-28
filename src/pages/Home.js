@@ -259,7 +259,7 @@ const Home = () => {
                         <div className="flex">
                             <div className="content">
                                 <h3>Connect With Me <br /><span className='gradient-blue'>On LinkedIn</span></h3>
-                                <p className='minimalish'>Connect with me by sending a <span className='bold'>connection request</span> on my LinkedIn. I respond within 1-5 business days. </p>
+                                <p className='minimalish'>Connect with me by sending a <span className='bold'>connection request</span> on my LinkedIn. I respond within 1-2 business days. </p>
                                 <br />
                                 <a href='https://www.linkedin.com/in/tahaparacha/' target='_blank' className="button-rounded"> Visit Profile </a>
                             </div>
