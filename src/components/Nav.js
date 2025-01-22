@@ -9,7 +9,7 @@ const Nav = () => {
                 <li> <a href="/#about">About</a> </li>
                 <li> <Link to="/blog">Blog</Link> </li>
             </ul>
-            <div className="socials">
+            <div className="socials" style={{marginTop: "65px"}}>
                 <a href="https://github.com/parachataha" target='_blank'> <BsGithub /> </a>
                 <a href="https://www.linkedin.com/in/tahaparacha/" target='_blank'> <BsLinkedin /> </a>
                 <a href="https://discord.gg/aYbBrAYQyN" target='_blank'> <BsDiscord /> </a>

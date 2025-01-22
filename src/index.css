@@ -11,3 +11,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Outdated portfolio */
+a.outdated-portfolio main {
+  padding-left: 20px;
+  padding: 5px 20px;
+  background-color: rgb(255, 174, 0);
+  cursor: pointer;
+}
+
+a.outdated-portfolio {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+.outdated-portfolio a {
+  cursor: pointer;
+  color: white;
+}
+
+section.outdated-portfolio {
+  text-align: center;
+
+}
+section.outdated-portfolio > a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  background-color: rgb(255, 174, 0);
+  padding: 30px 20px;
+  border-radius: 20px;
+  font-size: 1.2em;
+}

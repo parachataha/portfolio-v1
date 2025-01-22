@@ -9,7 +9,9 @@ const Footer = () => {
 
                 <div className="item">
                     <img className='logo' src={logo} alt="logo" />
-                    <p>Connect with me via Discord or LinkedIn. My Discord handle is @tahabaha. However I only accept message requests. Not friend requests.</p>
+                    <p>This portfolio is now outdated. Visit my new one <a href="https://tahaparacha.vercel.app">here</a> to stay up to date. 
+                    <br/> <br/>
+                    Connect with me via Discord or LinkedIn. My Discord handle is @tahabaha. However I only accept message requests. Not friend requests.</p>
                     <div className="flex socials">
                         <a href="https://github.com/parachataha" target='_blank'> <BsGithub /> </a>
                         <a href="https://www.linkedin.com/in/tahaparacha/" target='_blank'> <BsLinkedin /> </a>
@@ -21,6 +23,7 @@ const Footer = () => {
 
                     <h3>Navigate</h3>
                     <ul>
+                        <li> <a className='link' href="https://tahaparacha.vercel.app">New Portfolio</a> </li>
                         <li> <a className='link' href="/#about">About</a> </li>
                         <li> <a className='link' href="/#projects">Projects</a> </li>
                         <li> <a className='link' href="/#contact">Contact</a> </li>

@@ -65,6 +65,13 @@ const Home = () => {
                     <AiOutlineDown className='center'></AiOutlineDown>
                 </div>
             </header>
+
+            <section className='outdated-portfolio'>
+                <a href='https://tahaparacha.vercel.app/'> 
+                    <p> Please note that this portfolio is outdated! Visit my new one <a href='https://tahaparacha.vercel.app/'>here</a> to stay up to date with all my newest projects and work. </p>
+                </a>
+            </section>
+
             <section id="about">
                 <h2 className='reveal center'>Check out my blog</h2>
                 <p className="reveal center about-text"> I've created a blog to <b>help others</b> learn how to code, design and problem solve. As a <b>self-taught</b> coder and designer, it was incredibly hard to keep swapping between methods and tutorials with different techniques, so I took the time to see <b>what made me struggle</b> and to create a blog that solves common <b>beginner and advanced</b> problems, making sure I explain each step of the way.</p>
@@ -267,6 +274,13 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
+
+                <section className='outdated-portfolio'>
+                    <a href='https://tahaparacha.vercel.app/'> 
+                        <p> This portfolio is outdated! Please feel free to visit my new one <a href='https://tahaparacha.vercel.app/'>here</a> to stay up to date with all my newest projects and work. </p>
+                    </a>
+                </section>
+
             </div>
             <Footer></Footer>
         </div>

@@ -32,6 +32,13 @@ function App() {
           <meta name="twitter:title" content='Your Number One Front-end and back-end Developer - Taha' />
           <meta name="twitter:description" content="Hi! im Taha Paracha, I'm a front-end and back-end developer who designs beautiful websites for clients. Feel free to contact me on my LinkedIn or Discord."/>
         </Helmet>
+
+        <a href='https://tahaparacha.vercel.app/' className='outdated-portfolio'> 
+          <main className='outdated-portfolio'>
+              <p> This portfolio is outdated! Visit my new one <a href='https://tahaparacha.vercel.app/'>here</a>  </p>
+          </main>
+        </a>
+
         <Routes>
           <Route path='/' Component={Home}></Route>
           <Route path='/blog' Component={Blog}></Route>
